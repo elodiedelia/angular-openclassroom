@@ -1,8 +1,0 @@
-<li [ngClass]="{'list-group-item': true,
-                'list-group-item-success': thePost.loveIts>0,
-                'list-group-item-danger': thePost.loveIts<0}">
-  <h4 [ngStyle]="{color: getColor(), 'float':'left'}">{{thePost.title}}</h4><p [ngStyle]="{'color': '#808080','font-style': 'italic', 'float':'right'}">{{thePost.created_at | date: 'short'}}</p><br/>
-<div [ngStyle]="{color: getColor(), 'float': 'left'}">{{thePost.content}}</div><br/><br/>
-<button class="btn btn-success" (click)="onloveits()">Love it!</button>&nbsp;<button class="btn btn-danger" (click)="ondontloveits()"> Don't love it!</button>
-</li>
-
